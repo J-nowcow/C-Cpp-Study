@@ -11,5 +11,6 @@ int main(void) {
     printf("%6.3f\n", b); // 오른쪽에 붙이기
     printf("%-6.3f\n", b); // 왼쪽에 붙이기
     printf("%e\n",b); // e+001로 표시하기
+    printf("%d %f\n", b, a); // 출력 형식 잘못 맞추면 이상하게 나오니 조심
     return 0;
 }
