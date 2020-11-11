@@ -20,5 +20,17 @@ int main(void) {
     printf("%f\n", f); // 부호 따로 빼준다음 나머지 연산 --> -2가 아니라 -1 나옴
     f = (float)3/2; // 이러면 3에 대해 형변환 한 것으로 인식 --> 1.5 출력
     printf("%f\n", f);
+
+    printf("short : %d byte \n", sizeof((short)2));
+    printf("int : %d byte \n", sizeof(2));
+    printf("long : %d byte \n", sizeof(2L));
+    printf("float : %d byte \n", sizeof(3.0f));
+    printf("double : %d byte \n", sizeof(3.0));
+    printf("char : %d byte \n", sizeof('3'));
+
+    long long lnum = 12345;
+    printf("long long : %%lld %lld\n", lnum); // long은 ld, long long은 lld 사용
+    double ln2 = 1.234;
+    printf("double : %lf\n", ln2);
     return 0;
 }
